@@ -300,3 +300,18 @@ textarea{
     padding: 100px 0;
     position: relative;
 }
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: block !important;
+    text-align: left;
+  }
+  .topnav a.icon {
+    display: none !important; 
+  }
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    height: auto !important;
+  }
+}
