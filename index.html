@@ -1,110 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Parallax Starter - Areesha</title>
-<style>
-* { margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif; }
-.header { background:#000; color:#fff; padding:12px 15px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; position:fixed; width:100%; top:0; z-index:999; }
-.logo { font-size:13px; letter-spacing:3px; }
-#check { display:none; }
-.ham { font-size:26px; cursor:pointer; display:none; }
-.menu { display:flex; gap:15px; }
-.menu a { color:#fff; text-decoration:none; font-size:11px; letter-spacing:1px; }
-
-/* HERO */
-.hero { height:100vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1497366811353-26cc3f5fa43d?w=1200') center/cover; display:flex; flex-direction:column; justify-content:center; align-items:center; color:#fff; text-align:center; padding-top:50px; }
-.hero h1 { font-size:28px; font-weight:300; letter-spacing:4px; }
-.hero p { font-size:10px; margin:15px; letter-spacing:2px; }
-.btn { border:1px solid #fff; padding:8px 25px; margin-top:10px; font-size:11px; letter-spacing:2px; }
-
-/* ABOUT */
-.about { padding:60px 20px; background:#f2f2f2; text-align:center; }
-.about h2 { font-weight:400; letter-spacing:3px; margin-bottom:20px; }
-.about-row { display:flex; gap:20px; justify-content:center; }
-.card { background:#4a5a6a; color:#fff; padding:20px; width:320px; text-align:left; font-size:13px; line-height:1.5; }
-
-/* WHAT WE DO */
-.what { padding:60px 20px; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?w=1200') center/cover; color:#fff; text-align:center; }
-.what h2 { letter-spacing:3px; font-weight:400; }
-.what-row { display:flex; gap:15px; justify-content:center; margin-top:25px; }
-.what-box { border:1px solid #fff; padding:15px; width:180px; font-size:11px; }
-
-/* WORK */
-.work { padding:60px 20px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200') center/cover; color:#fff; text-align:center; }
-.num { display:flex; justify-content:center; gap:60px; margin-top:25px; }
-
-/* CONTACT */
-.contact { padding:60px 20px; background:#fff; text-align:center; }
-.contact input, .contact textarea { width:90%; max-width:500px; padding:10px; margin:5px; border:1px solid #ccc; display:block; margin:10px auto; }
-.contact button { background:#000; color:#fff; padding:10px 20px; border:none; margin-top:10px; }
-.footer { background:#000; color:#888; text-align:center; padding:15px; font-size:10px; }
-
-@media (max-width:700px){
-  .header { position:static; }
-  .ham { display:block; }
-  .menu { display:none; width:100%; background:#111; flex-direction:column; margin-top:10px; position:static; }
-  .menu a { padding:10px; border-bottom:1px solid #222; display:block; }
-  #check:checked ~ .menu { display:flex; }
-  .hero { height:85vh; padding-top:0; }
-  .about-row, .what-row, .num { flex-direction:column; align-items:center; }
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="header">
+<header class="header">
   <div class="logo">PARALLAX STARTER</div>
-  <input type="checkbox" id="check">
-  <label for="check" class="ham">☰</label>
-  <div class="menu">
-    <a href="#">HOME</a><a href="#">ABOUT</a><a href="#">SERVICES</a><a href="#">GALLERY</a><a href="#">CONTACT</a>
-  </div>
-</div>
+  <input type="checkbox" id="menu-check">
+  <label for="menu-check" class="hamburger">☰</label>
+  <nav class="menu">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#services">SERVICES</a>
+    <a href="#gallery">GALLERY</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+</header>
 
-<div class="hero">
+<section id="home" class="hero">
   <h1>WELCOME TO OUR STUDIO</h1>
   <p>WE CREATE BEAUTIFUL DIGITAL EXPERIENCES</p>
-  <div class="btn">EXPLORE</div>
-</div>
+  <a href="#about" class="btn">EXPLORE</a>
+</section>
 
-<div class="about">
+<section id="about" class="about-sec">
   <h2>ABOUT US</h2>
   <div class="about-row">
-    <div class="card">We are creative team dedicated to crafting meaningful experiences. This template by TemplateMo.</div>
-    <div class="card">Our approach combines research-driven insights with bold creative execution. Great design is about how it works.</div>
+    <div class="about-card">
+      <p>We are a creative team dedicated to crafting meaningful experiences through design and technology.</p>
+      <span>This is free HTML CSS template provided by TemplateMo.</span>
+    </div>
+    <div class="about-card">
+      <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=400" class="top-img">
+      <p>Our approach combines research-driven insights with bold creative execution.</p>
+      <span>From concept to launch, we collaborate closely with our clients.</span>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="what">
+<section id="services" class="what-sec">
   <h2>WHAT WE DO</h2>
+  <p class="sub">DESIGN - DEVELOP - DELIVER</p>
   <div class="what-row">
-    <div class="what-box">WEB DESIGN<br>CLEAN LAYOUTS</div>
-    <div class="what-box">BRANDING<br>IDENTITIES</div>
-    <div class="what-box">DEVELOPMENT<br>RESPONSIVE CODE</div>
+    <div class="what-box"><div class="icon">✦</div><h4>WEB DESIGN</h4><p>CLEAN LAYOUTS</p></div>
+    <div class="what-box"><div class="icon">◍</div><h4>BRANDING</h4><p>IDENTITIES THAT RESONATE</p></div>
+    <div class="what-box"><div class="icon">▣</div><h4>DEVELOPMENT</h4><p>RESPONSIVE CODE</p></div>
   </div>
-</div>
+</section>
 
-<div class="work">
+<section id="gallery" class="work-sec">
   <h2>OUR WORK</h2>
-  <p style="font-size:12px; max-width:500px; margin:15px auto;">From startups to brands, our portfolio reflects quality and attention to detail.</p>
-  <div class="num">
-    <div><h3>150+</h3><p>PROJECTS</p></div>
-    <div><h3>80+</h3><p>CLIENTS</p></div>
-    <div><h3>12+</h3><p>YEARS</p></div>
+  <p>From boutique startups to established brands, our portfolio reflects quality.</p>
+  <div class="numbers">
+    <div><h3>150+</h3><span>PROJECTS COMPLETED</span></div>
+    <div><h3>80+</h3><span>HAPPY CLIENTS</span></div>
+    <div><h3>12+</h3><span>YEARS EXPERIENCE</span></div>
   </div>
-</div>
+</section>
 
-<div class="contact">
+<section id="contact" class="contact-sec">
   <h2>GET IN TOUCH</h2>
-  <input type="text" placeholder="Your name">
-  <input type="email" placeholder="Your email">
-  <textarea placeholder="Your message" rows="4"></textarea>
-  <button>SEND MESSAGE</button>
-</div>
+  <p>LET'S START SOMETHING GREAT TOGETHER</p>
+  <div class="form-box">
+    <div class="inputs">
+      <input type="text" placeholder="Your name">
+      <input type="text" placeholder="Your email">
+    </div>
+    <textarea placeholder="Your message"></textarea>
+    <button>SEND MESSAGE</button>
+  </div>
+</section>
 
-<div class="footer">Copyright © 2026 Made by Areesha Parvaiz | TemplateMo</div>
+<footer class="footer">Copyright © 2026 Made with Love by Areesha | TemplateMo</footer>
 
 </body>
 </html>
