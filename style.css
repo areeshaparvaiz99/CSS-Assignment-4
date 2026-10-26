@@ -1,59 +1,51 @@
+
 {margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 html,body{width:100%;overflow-x:hidden;scroll-behavior:smooth}
 .header{height:65px;background:#000;color:#fff;display:flex;justify-content:space-between;align-items:center;padding:0 25px;position:fixed;top:0;left:0;width:100%;z-index:1000}
-.logo{font-size:14px;letter-spacing:3px;font-weight:400}
-#check{display:none}
-.ham{display:none;font-size:28px;cursor:pointer;color:#fff}
+.logo{font-size:14px;letter-spacing:3px}
+#menu-check{display:none}
+.hamburger{display:none;font-size:28px;cursor:pointer;color:#fff}
 .menu{display:flex;gap:22px}
 .menu a{color:#fff;text-decoration:none;font-size:11px;letter-spacing:1.5px;font-weight:300}
 
 .hero{height:100vh;width:100%;background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url('https://images.unsplash.com/photo-1497366811353-26cc3f3fa3d7?w=1600') center/cover no-repeat;background-attachment:fixed;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#fff;padding-top:65px}
-.hero h1{font-size:38px;font-weight:200;letter-spacing:5px}
-.hero p{font-size:11px;letter-spacing:3px;margin:18px 0;font-weight:300}
-.btn{border:1px solid #fff;padding:11px 30px;color:#fff;font-size:11px;letter-spacing:2px;margin-top:15px;cursor:pointer}
+.hero h1{font-size:32px;font-weight:200;letter-spacing:4px}
+.hero p{font-size:11px;letter-spacing:2px;margin:15px 0}
+.btn{border:1px solid #fff;padding:10px 28px;font-size:11px;letter-spacing:2px;margin-top:15px;cursor:pointer}
 
-.about{padding:80px 25px;background:#f4f4f4;text-align:center}
-.about h2{font-weight:400;letter-spacing:4px;font-size:22px;margin-bottom:35px}
+.about-sec{padding:80px 25px;background:#f4f4f4;text-align:center}
+.about-sec h2{font-weight:400;letter-spacing:3px;margin-bottom:30px}
 .about-row{display:flex;gap:25px;justify-content:center;flex-wrap:wrap}
-.card{background:#4a5a6a;color:#fff;padding:22px;width:380px;text-align:left;font-size:13px;line-height:1.7;font-weight:300;border-radius:4px}
-.card img{width:100%;height:110px;object-fit:cover;display:block;margin-bottom:15px;border-radius:3px}
+.about-card{background:#4a5a6a;color:#fff;padding:20px;width:360px;text-align:left;font-size:13px;line-height:1.6}
+.big-img{width:100%;height:110px;object-fit:cover;display:block;margin-bottom:12px;border-radius:3px}
 
-.what{padding:90px 25px;text-align:center;color:#fff;background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?w=1600') center/cover no-repeat;background-attachment:fixed}
-.what h2{font-weight:300;letter-spacing:4px;font-size:22px}
-.small-head{font-size:11px;letter-spacing:3px;margin:18px 0 35px;font-weight:300}
+.what-sec{padding:90px 25px;text-align:center;color:#fff;background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?w=1600') center/cover no-repeat;background-attachment:fixed}
+.what-sec h2{font-weight:300;letter-spacing:3px}
+.sub{font-size:11px;letter-spacing:2px;margin:15px 0 30px}
 .what-row{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
-.what-box{border:1px solid rgba(255,255,255,0.6);padding:25px;width:220px;background:rgba(0,0,0,0.15)}
-.what-box h4{font-size:13px;letter-spacing:2px;font-weight:400}
-.what-box p{font-size:11px;letter-spacing:1px}
-.what-box span{font-size:11px;opacity:0.8;line-height:1.5}
+.what-box{border:1px solid rgba(255,255,255,0.6);padding:20px;width:210px;background:rgba(0,0,0,0.15)}
 
-.work{padding:90px 25px;text-align:center;color:#fff;background:linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.72)),url('https://images.unsplash.com/photo-1519681393784-d1202673ba8a?w=1600') center/cover no-repeat;background-attachment:fixed}
-.work h2{font-weight:300;letter-spacing:4px;font-size:22px}
-.work-p{max-width:650px;margin:18px auto;font-size:13px;font-weight:300;line-height:1.6}
-.num{display:flex;justify-content:center;gap:90px;margin-top:45px;flex-wrap:wrap}
-.num h3{font-size:32px;font-weight:200;letter-spacing:2px}
-.num span{font-size:10px;letter-spacing:1.5px;font-weight:300}
+.work-sec{padding:90px 25px;text-align:center;color:#fff;background:linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.72)),url('https://images.unsplash.com/photo-1519681393784-d1202673ba8a?w=1600') center/cover no-repeat;background-attachment:fixed}
+.numbers{display:flex;justify-content:center;gap:80px;margin-top:35px;flex-wrap:wrap}
+.numbers h3{font-size:30px;font-weight:200}
+.numbers p{font-size:10px;letter-spacing:1px}
 
-.contact{padding:80px 25px;text-align:center;background:linear-gradient(rgba(255,255,255,0.88),rgba(255,255,255,0.88)),url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1600') center/cover no-repeat;background-attachment:fixed}
-.contact h2{font-weight:400;letter-spacing:4px;font-size:22px}
-.form{max-width:650px;margin:30px auto 0}
-.two-input{display:flex;gap:15px;margin-bottom:15px}
-.two-input input,textarea{width:100%;padding:12px;border:1px solid #ccc;font-size:13px;font-family:'Poppins',sans-serif;outline:none}
+.contact-sec{padding:80px 25px;text-align:center;background:linear-gradient(rgba(255,255,255,0.88),rgba(255,255,255,0.88)),url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1600') center/cover no-repeat;background-attachment:fixed}
+.form-box{max-width:600px;margin:25px auto 0}
+.inputs{display:flex;gap:15px;margin-bottom:15px}
+.inputs input,textarea{width:100%;padding:12px;border:1px solid #ccc;font-size:13px}
 textarea{height:120px;resize:none;margin-bottom:15px}
-.form button{background:#000;color:#fff;border:none;padding:12px 28px;font-size:11px;letter-spacing:1.5px;cursor:pointer}
+.form-box button{background:#000;color:#fff;border:none;padding:12px 28px;font-size:11px;letter-spacing:1.5px}
 
-.footer{background:#000;color:#777;text-align:center;padding:18px;font-size:11px;letter-spacing:1px}
+.footer{background:#000;color:#777;text-align:center;padding:18px;font-size:11px}
 
 @media (max-width:768px){
 .header{position:static;height:auto;min-height:65px;flex-wrap:wrap}
-.ham{display:block}
-.menu{display:none;width:100%;flex-direction:column;background:#111;position:static;margin-top:12px;padding:5px 0}
-.menu a{padding:13px 5px;border-bottom:1px solid #222;display:block}
-#check:checked ~ .menu{display:flex}
+.hamburger{display:block}
+.menu{display:none;width:100%;flex-direction:column;background:#111;margin-top:12px;position:static}
+.menu a{padding:12px;border-bottom:1px solid #222;display:block}
+#menu-check:checked ~ .menu{display:flex}
 .hero{background-attachment:scroll;height:90vh;padding-top:0}
-.hero h1{font-size:24px;padding:0 15px;line-height:1.3}
-.about-row,.what-row,.num,.two-input{flex-direction:column;align-items:center}
-.card{width:100%;max-width:380px}
-.what-box{width:100%;max-width:280px}
-.num{ gap:35px }
+.hero h1{font-size:24px}
+.about-row,.what-row,.numbers,.inputs{flex-direction:column;align-items:center}
 }
