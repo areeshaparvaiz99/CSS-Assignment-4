@@ -1,37 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Parallax Starter</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<title>Parallax Starter - Areesha</title>
 <style>
-* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
-html, body { width:100%; overflow-x:hidden; }
-.header { height:55px; background:#000; color:#fff; display:flex; justify-content:space-between; align-items:center; padding:0 15px; position:fixed; top:0; left:0; width:100%; z-index:1000; }
+* { margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif; }
+.header { background:#000; color:#fff; padding:12px 15px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; position:fixed; width:100%; top:0; z-index:999; }
 .logo { font-size:13px; letter-spacing:3px; }
+#check { display:none; }
+.ham { font-size:26px; cursor:pointer; display:none; }
 .menu { display:flex; gap:15px; }
 .menu a { color:#fff; text-decoration:none; font-size:11px; letter-spacing:1px; }
-#menu-check { display:none; position:absolute; left:-9999px; }
-.hamburger { display:none; font-size:26px; cursor:pointer; }
 
-.hero {
-  width:100%; height:100vh;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1497366811353-26cc3f5fa43d?w=1200') center/cover no-repeat;
-  display:flex; flex-direction:column; justify-content:center; align-items:center;
-  text-align:center; color:#fff; padding-top:55px;
-}
+/* HERO */
+.hero { height:100vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1497366811353-26cc3f5fa43d?w=1200') center/cover; display:flex; flex-direction:column; justify-content:center; align-items:center; color:#fff; text-align:center; padding-top:50px; }
 .hero h1 { font-size:28px; font-weight:300; letter-spacing:4px; }
-.hero p { font-size:10px; letter-spacing:2px; margin:15px 0; }
-.btn { border:1px solid #fff; padding:8px 25px; color:#fff; text-decoration:none; font-size:11px; letter-spacing:2px; margin-top:10px; }
+.hero p { font-size:10px; margin:15px; letter-spacing:2px; }
+.btn { border:1px solid #fff; padding:8px 25px; margin-top:10px; font-size:11px; letter-spacing:2px; }
 
-@media (max-width:768px){
-  .header { position:static; flex-wrap:wrap; height:auto; min-height:55px; }
-  .hamburger { display:block; }
-  .menu { display:none; width:100%; flex-direction:column; background:#111; margin-top:10px; }
-  .menu a { padding:12px 0; border-bottom:1px solid #222; display:block; }
-  #menu-check:checked ~ .menu { display:flex; }
-  .hero { padding-top:0; height:90vh; }
+/* ABOUT */
+.about { padding:60px 20px; background:#f2f2f2; text-align:center; }
+.about h2 { font-weight:400; letter-spacing:3px; margin-bottom:20px; }
+.about-row { display:flex; gap:20px; justify-content:center; }
+.card { background:#4a5a6a; color:#fff; padding:20px; width:320px; text-align:left; font-size:13px; line-height:1.5; }
+
+/* WHAT WE DO */
+.what { padding:60px 20px; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?w=1200') center/cover; color:#fff; text-align:center; }
+.what h2 { letter-spacing:3px; font-weight:400; }
+.what-row { display:flex; gap:15px; justify-content:center; margin-top:25px; }
+.what-box { border:1px solid #fff; padding:15px; width:180px; font-size:11px; }
+
+/* WORK */
+.work { padding:60px 20px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200') center/cover; color:#fff; text-align:center; }
+.num { display:flex; justify-content:center; gap:60px; margin-top:25px; }
+
+/* CONTACT */
+.contact { padding:60px 20px; background:#fff; text-align:center; }
+.contact input, .contact textarea { width:90%; max-width:500px; padding:10px; margin:5px; border:1px solid #ccc; display:block; margin:10px auto; }
+.contact button { background:#000; color:#fff; padding:10px 20px; border:none; margin-top:10px; }
+.footer { background:#000; color:#888; text-align:center; padding:15px; font-size:10px; }
+
+@media (max-width:700px){
+  .header { position:static; }
+  .ham { display:block; }
+  .menu { display:none; width:100%; background:#111; flex-direction:column; margin-top:10px; position:static; }
+  .menu a { padding:10px; border-bottom:1px solid #222; display:block; }
+  #check:checked ~ .menu { display:flex; }
+  .hero { height:85vh; padding-top:0; }
+  .about-row, .what-row, .num { flex-direction:column; align-items:center; }
 }
 </style>
 </head>
@@ -39,22 +56,55 @@ html, body { width:100%; overflow-x:hidden; }
 
 <div class="header">
   <div class="logo">PARALLAX STARTER</div>
-  <input type="checkbox" id="menu-check">
-  <label for="menu-check" class="hamburger">☰</label>
+  <input type="checkbox" id="check">
+  <label for="check" class="ham">☰</label>
   <div class="menu">
-    <a href="#">HOME</a>
-    <a href="#">ABOUT</a>
-    <a href="#">SERVICES</a>
-    <a href="#">GALLERY</a>
-    <a href="#">CONTACT</a>
+    <a href="#">HOME</a><a href="#">ABOUT</a><a href="#">SERVICES</a><a href="#">GALLERY</a><a href="#">CONTACT</a>
   </div>
 </div>
 
 <div class="hero">
   <h1>WELCOME TO OUR STUDIO</h1>
   <p>WE CREATE BEAUTIFUL DIGITAL EXPERIENCES</p>
-  <a class="btn">EXPLORE</a>
+  <div class="btn">EXPLORE</div>
 </div>
+
+<div class="about">
+  <h2>ABOUT US</h2>
+  <div class="about-row">
+    <div class="card">We are creative team dedicated to crafting meaningful experiences. This template by TemplateMo.</div>
+    <div class="card">Our approach combines research-driven insights with bold creative execution. Great design is about how it works.</div>
+  </div>
+</div>
+
+<div class="what">
+  <h2>WHAT WE DO</h2>
+  <div class="what-row">
+    <div class="what-box">WEB DESIGN<br>CLEAN LAYOUTS</div>
+    <div class="what-box">BRANDING<br>IDENTITIES</div>
+    <div class="what-box">DEVELOPMENT<br>RESPONSIVE CODE</div>
+  </div>
+</div>
+
+<div class="work">
+  <h2>OUR WORK</h2>
+  <p style="font-size:12px; max-width:500px; margin:15px auto;">From startups to brands, our portfolio reflects quality and attention to detail.</p>
+  <div class="num">
+    <div><h3>150+</h3><p>PROJECTS</p></div>
+    <div><h3>80+</h3><p>CLIENTS</p></div>
+    <div><h3>12+</h3><p>YEARS</p></div>
+  </div>
+</div>
+
+<div class="contact">
+  <h2>GET IN TOUCH</h2>
+  <input type="text" placeholder="Your name">
+  <input type="email" placeholder="Your email">
+  <textarea placeholder="Your message" rows="4"></textarea>
+  <button>SEND MESSAGE</button>
+</div>
+
+<div class="footer">Copyright © 2026 Made by Areesha Parvaiz | TemplateMo</div>
 
 </body>
 </html>
