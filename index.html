@@ -1,91 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Parallax Starter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parallax Starter - Areesha Parvaiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- HEADER -->
 <div class="header">
-    <div class="logo">PARALLAX STARTER</div>
-    <div class="menu">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#services">SERVICES</a>
-        <a href="#gallery">GALLERY</a>
-        <a href="#contact">CONTACT</a>
-    </div>
+  <div class="logo">PARALLAX STARTER</div>
+  <input type="checkbox" id="menu-check">
+  <label for="menu-check" class="hamburger">☰</label>
+  <nav class="menu">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#services">SERVICES</a>
+    <a href="#gallery">GALLERY</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
 </div>
 
+<!-- HERO - Background pic 1 -->
 <div id="home" class="hero">
-    <h1>WELCOME TO OUR STUDIO</h1>
-    <p>WE CREATE BEAUTIFUL DIGITAL EXPERIENCES</p>
-    <a href="#about" class="btn">EXPLORE</a>
+  <h1>WELCOME TO OUR STUDIO</h1>
+  <p>WE CREATE BEAUTIFUL DIGITAL EXPERIENCES</p>
+  <a href="#about" class="btn">EXPLORE</a>
 </div>
 
+<!-- ABOUT -->
 <div id="about" class="about-sec">
-    <h2>ABOUT US</h2>
-    <div class="about-row">
-        <div class="about-card">
-            <img src="https://i.pravatar.cc/100?img=5">
-            <p>We are a creative team dedicated to crafting meaningful experiences through design and technology. Our studio blends modern aesthetics with strategic thinking.</p>
-            <span>Free template by TemplateMo. Images by Unsplash.</span>
-        </div>
-        <div class="about-card">
-            <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=400" class="big-img">
-            <p>Our approach combines research-driven insights with bold creative execution. We believe great design is not just how it looks, but how it works.</p>
-            <span>We collaborate closely with clients to ensure every detail aligns with their goals.</span>
-        </div>
+  <h2>ABOUT US</h2>
+  <div class="about-row">
+    <div class="about-card">
+      <img src="https://i.pravatar.cc/100?img=32" alt="user">
+      <p>We are a creative team dedicated to crafting meaningful experiences through design and technology. Our studio blends modern aesthetics with strategic thinking.</p>
+      <span>This is free HTML CSS template provided by TemplateMo. Images by Unsplash.</span>
     </div>
+    <div class="about-card">
+      <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=500" class="big-img" alt="team">
+      <p>Our approach combines research-driven insights with bold creative execution. We believe great design is not just about how it looks, but how it works.</p>
+      <span>We collaborate closely with clients to ensure every detail aligns with their goals.</span>
+    </div>
+  </div>
 </div>
 
+<!-- WHAT WE DO - Background pic 2 -->
 <div id="services" class="what-sec">
-    <h2>WHAT WE DO</h2>
-    <p class="sub">DESIGN - DEVELOP - DELIVER</p>
-    <div class="what-row">
-        <div class="what-box">
-            <div class="icon">✦</div>
-            <h4>WEB DESIGN</h4>
-            <p>CLEAN LAYOUTS BUILT FOR IMPACT</p>
-        </div>
-        <div class="what-box">
-            <div class="icon">◍</div>
-            <h4>BRANDING</h4>
-            <p>IDENTITIES THAT RESONATE</p>
-        </div>
-        <div class="what-box">
-            <div class="icon">▣</div>
-            <h4>DEVELOPMENT</h4>
-            <p>RESPONSIVE CODE THAT PERFORMS</p>
-        </div>
+  <h2>WHAT WE DO</h2>
+  <p class="sub">DESIGN - DEVELOP - DELIVER</p>
+  <div class="what-row">
+    <div class="what-box">
+      <div class="icon">✦</div>
+      <h4>WEB DESIGN</h4>
+      <p>CLEAN LAYOUTS BUILT FOR IMPACT</p>
     </div>
+    <div class="what-box">
+      <div class="icon">◎</div>
+      <h4>BRANDING</h4>
+      <p>IDENTITIES THAT RESONATE</p>
+    </div>
+    <div class="what-box">
+      <div class="icon">▣</div>
+      <h4>DEVELOPMENT</h4>
+      <p>RESPONSIVE CODE EVERYWHERE</p>
+    </div>
+  </div>
 </div>
 
+<!-- OUR WORK - Background pic 3 -->
 <div id="gallery" class="work-sec">
-    <h2>OUR WORK</h2>
-    <p class="work-p">From boutique startups to established brands, our portfolio reflects a commitment to quality and attention to detail. Each project is an opportunity to push boundaries.</p>
-    <div class="numbers">
-        <div><h3>150+</h3><span>PROJECTS</span></div>
-        <div><h3>80+</h3><span>CLIENTS</span></div>
-        <div><h3>12</h3><span>YEARS</span></div>
-    </div>
+  <h2>OUR WORK</h2>
+  <p class="work-p">From boutique startups to established brands, our portfolio reflects a commitment to quality and attention to detail. Each project is an opportunity to push boundaries.</p>
+  <div class="numbers">
+    <div><h3>150+</h3><p>PROJECTS</p></div>
+    <div><h3>80+</h3><p>CLIENTS</p></div>
+    <div><h3>12+</h3><p>YEARS</p></div>
+  </div>
 </div>
 
+<!-- CONTACT - Background pic 4 -->
 <div id="contact" class="contact-sec">
-    <h2>GET IN TOUCH</h2>
-    <p class="sub2">LET'S START SOMETHING GREAT</p>
-    <div class="form-box">
-        <div class="inputs">
-            <input type="text" placeholder="Your name">
-            <input type="text" placeholder="Your email">
-        </div>
-        <textarea placeholder="Your message"></textarea>
-        <button>SEND MESSAGE</button>
+  <h2>GET IN TOUCH</h2>
+  <p class="sub2">LET'S START SOMETHING GREAT TOGETHER</p>
+  <div class="form-box">
+    <div class="inputs">
+      <input type="text" placeholder="Your name">
+      <input type="email" placeholder="Your email">
     </div>
+    <textarea placeholder="Your message"></textarea>
+    <button>SEND MESSAGE</button>
+  </div>
 </div>
 
-<div class="footer">Copyright © 2026 Made by Areesha | Designed by TemplateMo</div>
+<div class="footer">Copyright © 2026 Made with Love by Areesha | Designed by TemplateMo</div>
+
 </body>
 </html>
