@@ -1,51 +1,62 @@
 
-{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
 html,body{width:100%;overflow-x:hidden;scroll-behavior:smooth}
-.header{height:65px;background:#000;color:#fff;display:flex;justify-content:space-between;align-items:center;padding:0 25px;position:fixed;top:0;left:0;width:100%;z-index:1000}
-.logo{font-size:14px;letter-spacing:3px}
+.header{height:60px;background:#000;color:#fff;display:flex;justify-content:space-between;align-items:center;padding:0 20px;position:fixed;top:0;width:100%;z-index:1000}
+.logo{font-size:12px;letter-spacing:3px}
 #menu-check{display:none}
-.hamburger{display:none;font-size:28px;cursor:pointer;color:#fff}
-.menu{display:flex;gap:22px}
-.menu a{color:#fff;text-decoration:none;font-size:11px;letter-spacing:1.5px;font-weight:300}
+.hamburger{display:none;font-size:24px;cursor:pointer;color:#fff}
+.menu{display:flex;gap:20px}
+.menu a{color:#fff;text-decoration:none;font-size:10px;letter-spacing:1px}
 
-.hero{height:100vh;width:100%;background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url('https://images.unsplash.com/photo-1497366811353-26cc3f3fa3d7?w=1600') center/cover no-repeat;background-attachment:fixed;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#fff;padding-top:65px}
-.hero h1{font-size:32px;font-weight:200;letter-spacing:4px}
-.hero p{font-size:11px;letter-spacing:2px;margin:15px 0}
-.btn{border:1px solid #fff;padding:10px 28px;font-size:11px;letter-spacing:2px;margin-top:15px;cursor:pointer}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://images.unsplash.com/photo-1497366811353-26cc3f3fa3d7?w=1200);background-size:cover;background-position:center;background-attachment:fixed;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;text-align:center;padding-top:60px}
+.hero h1{font-size:26px;font-weight:300;letter-spacing:4px}
+.hero p{font-size:9px;letter-spacing:2px;margin:12px 0}
+.btn{border:1px solid #fff;padding:8px 22px;font-size:10px;letter-spacing:2px;margin-top:12px}
 
-.about-sec{padding:80px 25px;background:#f4f4f4;text-align:center}
-.about-sec h2{font-weight:400;letter-spacing:3px;margin-bottom:30px}
-.about-row{display:flex;gap:25px;justify-content:center;flex-wrap:wrap}
-.about-card{background:#4a5a6a;color:#fff;padding:20px;width:360px;text-align:left;font-size:13px;line-height:1.6}
-.big-img{width:100%;height:110px;object-fit:cover;display:block;margin-bottom:12px;border-radius:3px}
+.about-sec{padding:70px 20px;background:#e9eef2;text-align:center}
+.about-sec h2{font-size:20px;letter-spacing:3px;font-weight:400;margin-bottom:25px}
+.about-row{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
+.about-card{background:#4a5a6a;color:#fff;padding:20px;width:340px;text-align:left;font-size:12px;line-height:1.6;border-radius:6px;display:flex;gap:12px}
+.big-img{width:80px;height:80px;object-fit:cover;border-radius:4px;flex-shrink:0}
 
-.what-sec{padding:90px 25px;text-align:center;color:#fff;background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?w=1600') center/cover no-repeat;background-attachment:fixed}
-.what-sec h2{font-weight:300;letter-spacing:3px}
-.sub{font-size:11px;letter-spacing:2px;margin:15px 0 30px}
+.what-sec{padding:80px 20px;background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?w=1200);background-size:cover;background-position:center;background-attachment:fixed;color:#fff;text-align:center}
+.what-sec h2{letter-spacing:3px;font-weight:300}
+.sub{font-size:10px;letter-spacing:2px;margin:15px 0 30px}
 .what-row{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
-.what-box{border:1px solid rgba(255,255,255,0.6);padding:20px;width:210px;background:rgba(0,0,0,0.15)}
+.what-box{width:200px;text-align:center;font-size:10px;letter-spacing:1px;line-height:1.6}
+.icon{width:40px;height:40px;border:1px solid #fff;transform:rotate(45deg);display:flex;justify-content:center;align-items:center;margin:0 auto 20px}
+.icon h4,.icon{transform:rotate(-45deg)}
+.what-box h4{font-size:11px;letter-spacing:1.5px;margin-bottom:8px;font-weight:400}
 
-.work-sec{padding:90px 25px;text-align:center;color:#fff;background:linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.72)),url('https://images.unsplash.com/photo-1519681393784-d1202673ba8a?w=1600') center/cover no-repeat;background-attachment:fixed}
+.work-sec{padding:80px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200);background-size:cover;background-position:center;background-attachment:fixed;color:#fff;text-align:center}
+.work-sec h2{letter-spacing:3px;font-weight:300}
+.work-p{max-width:600px;margin:15px auto;font-size:11px;line-height:1.6;opacity:0.9}
 .numbers{display:flex;justify-content:center;gap:80px;margin-top:35px;flex-wrap:wrap}
-.numbers h3{font-size:30px;font-weight:200}
-.numbers p{font-size:10px;letter-spacing:1px}
+.numbers h3{font-size:28px;font-weight:200}
+.numbers p{font-size:9px;letter-spacing:1px;margin-top:5px;line-height:1.5}
 
-.contact-sec{padding:80px 25px;text-align:center;background:linear-gradient(rgba(255,255,255,0.88),rgba(255,255,255,0.88)),url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1600') center/cover no-repeat;background-attachment:fixed}
-.form-box{max-width:600px;margin:25px auto 0}
+.contact-sec{padding:80px 20px;background:linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),url(https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200);background-size:cover;background-position:center;background-attachment:fixed;text-align:center}
+.contact-sec h2{letter-spacing:3px;font-weight:400;font-size:20px}
+.sub2{font-size:10px;letter-spacing:2px;margin:15px 0 25px}
+.form-box{max-width:600px;margin:0 auto}
 .inputs{display:flex;gap:15px;margin-bottom:15px}
-.inputs input,textarea{width:100%;padding:12px;border:1px solid #ccc;font-size:13px}
-textarea{height:120px;resize:none;margin-bottom:15px}
-.form-box button{background:#000;color:#fff;border:none;padding:12px 28px;font-size:11px;letter-spacing:1.5px}
+.inputs input,textarea{width:100%;padding:11px;border:1px solid #ccc;font-size:12px;outline:none}
+textarea{height:110px;resize:none;margin-bottom:15px}
+.form-box button{background:#000;color:#fff;border:none;padding:11px 24px;font-size:10px;letter-spacing:1.5px;cursor:pointer;display:block}
 
-.footer{background:#000;color:#777;text-align:center;padding:18px;font-size:11px}
+.footer{background:#000;color:#777;text-align:center;padding:16px;font-size:10px}
 
 @media (max-width:768px){
-.header{position:static;height:auto;min-height:65px;flex-wrap:wrap}
+.header{position:fixed}
 .hamburger{display:block}
-.menu{display:none;width:100%;flex-direction:column;background:#111;margin-top:12px;position:static}
-.menu a{padding:12px;border-bottom:1px solid #222;display:block}
+.menu{display:none;width:100%;position:absolute;top:60px;left:0;background:#000;flex-direction:column;padding:10px 0}
+.menu a{padding:12px 20px;border-bottom:1px solid #222;display:block}
 #menu-check:checked ~ .menu{display:flex}
-.hero{background-attachment:scroll;height:90vh;padding-top:0}
-.hero h1{font-size:24px}
+.hero{background-attachment:scroll;height:85vh;padding-top:0}
 .about-row,.what-row,.numbers,.inputs{flex-direction:column;align-items:center}
+.about-card{width:95%;max-width:360px}
+.what-box{width:80%}
 }
+*Ab ye dono replace karo, commit karo, 3 min wait karo.*
+
+Video me jaisa hai waisa hi ayega, aur mobile pe hamburger ☰ ayega, desktop pe nahi ayega. Desktop pe HOME ABOUT wale hi rahenge!
