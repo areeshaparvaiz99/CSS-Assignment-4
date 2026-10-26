@@ -279,54 +279,8 @@ textarea{
     margin-top:50px
 }
 
-@media(max-width:768px){
-    .header{padding:0 15px;height:56px}
-    .menu a{margin-left:10px;font-size:8px}
-    .hero, .what-sec, .work-sec{background-attachment:scroll}
-    .hero h1{font-size:26px;letter-spacing:3px}
-    .about-row, .what-row, .numbers, .inputs{flex-direction:column}
-    .what-row{gap:35px}.numbers{gap:20px}
-}
-@media(max-width:480px){
-    .menu{display:none}
-    .logo{margin:0 auto}
-    .hero h1{font-size:22px}
-}
-#contact {
-    background: linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.35)), url('contact-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 100px 0;
-    position: relative;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
-    display: block !important;
-    text-align: left;
-  }
-  .topnav a.icon {
-    display: none !important; 
-  }
-  .topnav {
-    display: flex;
-    flex-direction: column;
-    height: auto !important;
-  }
-}
-@media screen and (max-width: 600px) {
-  .topnav a { display: none; }
-  .topnav a.icon {
-    display: block !important;
-    font-size: 26px;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-  }
-}
 #menu-check{display:none}
-.hamburger{display:none; font-size:32px; color:white; cursor:pointer}
+.hamburger{display:none; font-size:28px; color:white; cursor:pointer; padding-right:15px}
 
 @media (max-width:768px){
   .header{
@@ -334,6 +288,9 @@ textarea{
     flex-wrap:wrap;
     justify-content:space-between;
     align-items:center;
+    padding:0 15px;
+    height:60px;
+    position:static;
   }
   .hamburger{
     display:block;
@@ -343,10 +300,26 @@ textarea{
     display:none;
     width:100%;
     flex-direction:column;
-    background:black;
+    background:#0a0a0a;
     position:static;
+    padding:10px 0;
+  }
+  .menu a{
+    display:block;
+    padding:10px 15px;
+    margin:0;
+    border-bottom:1px solid #333;
   }
   #menu-check:checked ~ .menu{
     display:flex;
   }
+  .hero, .what-sec, .work-sec{
+    background-attachment:scroll;
+  }
+  .about-row, .what-row, .numbers, .inputs{
+    flex-direction:column;
+  }
+}
+@media (max-width:480px){
+  .hero h1{font-size:22px}
 }
