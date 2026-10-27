@@ -53,11 +53,12 @@ color:#fff;text-align:center
 
 .contact{
 padding:80px 20px;
-background:linear-gradient(rgba(255,255,255,0.65),rgba(255,255,255,0.65)),url(contact-bg.jpg);
+background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),url(contact-bg.jpg);
 background-size:cover;
 background-position:center;
 text-align:center
 }
+.contact h2{font-size:32px;font-weight:600;color:#fff;margin:8px 0 25px}
 .contact h2{font-size:24px;font-weight:300;margin:8px 0 25px}
 .form{max-width:600px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
 .two{display:flex;gap:12px}.two input,.form textarea{width:100%;padding:14px;background:#fff;border:1.5px solid #ddd;border-radius:8px;font-size:12px;outline:none;transition:0.2s}.two input:focus,.form textarea:focus{border-color:#ffcc57;box-shadow:0 0 0 3px rgba(255,204,87,0.15)}
